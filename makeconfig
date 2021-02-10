@@ -162,7 +162,7 @@ LIB9OFILES=\
 	exitcode.o\
 	fcallfmt.o\
 	get9root.o\
-	getapproot.o\
+	getusrdir.o\
 	getcallerpc-$(OBJTYPE).o\
 	getenv.o\
 	getfields.o\

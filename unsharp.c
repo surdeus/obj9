@@ -1,33 +1,26 @@
 #include <u.h>
 #include <libc.h>
 
-/*
- * I don't want too many of these,
- * but the ones we have are just too useful. 
- */
 static struct {
 	char *old;
 	char *new;
 } replace[] = {
-	"#a", 0, /* must be first */
-	"#d", "/dev/fd",
+	{"#u", 0},
+	{"#d", "/dev/fd"},
 };
 
-char*
+char *
 unsharp(char *old)
 {
 	char *new;
 	int i, olen, nlen, len;
-
-	if(!replace[0].new)
-		replace[0].new = getapproot() ;
-
+	if(!replace[0].new) replace[0].new = getusrdir() ;
 	for(i=0; i<nelem(replace); i++){
 		if(!replace[i].new)
 			continue;
 		olen = strlen(replace[i].old);
 		if(strncmp(old, replace[i].old, olen) != 0
-		|| (old[olen] != '\0' && old[olen] != '/'))
+				|| (old[olen] != '\0' && old[olen] != '/'))
 			continue;
 		nlen = strlen(replace[i].new);
 		len = strlen(old)+nlen-olen;

@@ -839,7 +839,7 @@ extern	char*	sysname(void);
 extern	void	werrstr(char*, ...);
 extern	char*	getns(void);
 extern	char*	get9root(void);
-extern char* getapproot(void);
+extern char * getusrdir(void);
 extern	char*	unsharp(char*);
 extern	int	sendfd(int, int);
 extern	int	recvfd(int);
