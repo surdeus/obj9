@@ -4,11 +4,10 @@
 char *
 getusrdir(void)
 {
-	static char s[256] = "\0" ;
-	static char *h = 0 ;
-	if(!h) h = getenv("HOME") ;
-	if(!h) h = getenv("home") ;
-	if(!*s) strncpy(s, h, sizeof(s) - 1) ;
-	return s ;
+	static char *u = 0 ;
+	if(u) return u ;
+	u = getenv("HOME") ;
+	if(!u) u = getenv("home") ;
+	return u ;
 }
 
