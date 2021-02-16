@@ -10,7 +10,5 @@ clean:
 	rm -f ${OFILES} ${TGT}
 install: ${TGT}
 	mkdir -p ${MANDIR}/7 ${INCDIR}/${NAME} ${OBJDIR}/${NAME}
-	cp -f man-regexp ${MANDIR}/7/regexp
-	chmod 0644 ${MANDIR}/7/regexp
 	cp -f ${TGT} ${OBJDIR}/
 	cp -f ${HFILES} ${INCDIR}/${NAME}
