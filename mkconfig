@@ -1,5 +1,5 @@
 <$MKINCDIR/config
-NAME = 9
+OBJNAME = 9
 VERSION = 7
 OBJTYPE = 386
 #OBJTYPE = arm
