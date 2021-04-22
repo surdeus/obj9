@@ -26,6 +26,7 @@ int		isupperrune(Rune c);
 int		runelen(long c);
 /* Usable for streams and was implemented for hackline. */
 int runelenbyhd(unsigned char c);
+char *runestoutf(char*, Rune*);
 
 int		runenlen(Rune *r, int nrune);
 Rune*		runestrcat(Rune *s1, Rune *s2);
