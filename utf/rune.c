@@ -178,6 +178,17 @@ runelen(long c)
 }
 
 int
+runelenbyhd(uchar c)
+{
+        if(!c) return 1 ;
+        if(c < Tx) return 1 ;
+        if(c < T3) return 2 ;
+        if(c < T4) return 3 ;
+        if(c < T5) return 4 ;
+	return 0 ;
+}
+
+int
 runenlen(Rune *r, int nrune)
 {
 	int nb, c;
