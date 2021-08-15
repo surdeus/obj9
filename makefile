@@ -1,4 +1,5 @@
 include makeconfig
+.PHONY: clean install
 TGT = ${NAME}.a
 CFLAGS = ${DEFS} ${CPPFLAGS} ${INCS}
 all: ${TGT}
