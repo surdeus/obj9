@@ -101,6 +101,7 @@ UTFOFILES=\
 	utf/utfrune.o\
 	utf/utfutf.o\
 	utf/runestoutf.o\
+	utf/utftorunes.o\
 
 BIOFILES=\
 	bio/bbuffered.o\
