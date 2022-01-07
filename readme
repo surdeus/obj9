@@ -1,13 +1,6 @@
-# lib9
-Plan9 OS standard library.
-## Build
-Building gives you one static library.
-### make
-``
-	% make
-``
-### mk
-``
-	% mk
-``
+# obj9
+
+Originally lib9.
+
+Plan9 OS modified library with often used functions for my projects.
 

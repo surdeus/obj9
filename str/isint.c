@@ -1,0 +1,5 @@
+
+int
+strisint(char *s)
+{
+}
