@@ -3,7 +3,7 @@
 #include <stdarg.h>
 #include <string.h>
 #include "plan9.h"
-#include "fmt.h"
+#include <9/fmt.h>
 #include "fmtdef.h"
 
 /*

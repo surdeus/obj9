@@ -1,5 +1,5 @@
 #include "lib9.h"
-#include "regexp9.h"
+#include <9/regexp9.h>
 
 void
 regerror(char *s)

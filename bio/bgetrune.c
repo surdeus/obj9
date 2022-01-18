@@ -1,6 +1,6 @@
-#include	"lib9.h"
-#include	<bio.h>
-#include	<utf.h>
+#include	<9/9.h>
+#include	<9/bio.h>
+#include	<9/utf.h>
 
 long
 Bgetrune(Biobuf *bp)

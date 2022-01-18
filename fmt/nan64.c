@@ -7,7 +7,7 @@
 
 #include "plan9.h"
 #include <assert.h>
-#include "fmt.h"
+#include <9/fmt.h>
 #include "fmtdef.h"
 
 static uvlong uvnan    = ((uvlong)0x7FF00000<<32)|0x00000001;

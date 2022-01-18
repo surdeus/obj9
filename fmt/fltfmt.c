@@ -6,10 +6,10 @@
 #include <stdlib.h>
 #include <errno.h>
 #include <stdarg.h>
-#include <fmt.h>
+#include <9/fmt.h>
 #include <assert.h>
 #include "plan9.h"
-#include "fmt.h"
+//#include "fmt.h"
 #include "fmtdef.h"
 #include "nan.h"
 

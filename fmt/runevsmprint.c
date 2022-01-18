@@ -5,14 +5,14 @@
  * different pointers than the standard malloc. 
  */
 #ifdef PLAN9PORT
-#include <u.h>
-#include <libc.h>
+#include <9/u.h>
+#include <9/c.h>
 #include "fmtdef.h"
 #else
 #include <stdlib.h>
 #include <string.h>
 #include "plan9.h"
-#include "fmt.h"
+#include <9/fmt.h>
 #include "fmtdef.h"
 #endif
 

@@ -1,5 +1,5 @@
 #include "lib9.h"
-#include "regexp9.h"
+#include <9/regexp9.h>
 
 /* substitute into one string using the matches from the last regexec() */
 extern	void

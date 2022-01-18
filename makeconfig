@@ -18,7 +18,7 @@ MANDIR = ${SHRDIR}/man
 
 DOTINC = -I.
 SECINC = -Isec
-INCS = ${DOTINC} ${SECINC}
+INCS = ${DOTINC} ${SECINC} -Ishr/inc
 DEFS = -DPLAN9PORT -DPLAN9PATH=\"${PLAN9PATH}\" -D_DEFAULT_SOURCE
 CFLAGS =
 ARFLAGS = rc
@@ -50,7 +50,7 @@ FMTOFILES=\
 	fmt/fmtfd.o\
 	fmt/fmtfdflush.o\
 	fmt/fmtlocale.o\
-	fmtlock2.o\
+	fmt/fmtlock.o\
 	fmt/fmtnull.o\
 	fmt/fmtprint.o\
 	fmt/fmtquote.o\
@@ -131,95 +131,8 @@ REGEXFILES=\
 	regex/rregexec.o\
 	regex/rregsub.o\
 
-LIB9OFILES=\
-	_exits.o\
-	_p9dialparse.o\
-	_p9dir.o\
-	announce.o\
-	argv0.o\
-	atexit.o\
-	atoi.o\
-	atol.o\
-	atoll.o\
-	atnotify.o\
-	await.o\
-	cistrcmp.o\
-	cistrncmp.o\
-	cistrstr.o\
-	cleanname.o\
-	create.o\
-	ctime.o\
-	dial.o\
-	dirfstat.o\
-	dirfwstat.o\
-	dirmodefmt.o\
-	dirread.o\
-	dirstat.o\
-	dirwstat.o\
-	dup.o\
-	encodefmt.o\
-	errstr.o\
-	exec.o\
-	execl.o\
-	exitcode.o\
-	fcallfmt.o\
-	get9root.o\
-	getusrdir.o\
-	getcallerpc-$(OBJTYPE).o\
-	getenv.o\
-	getfields.o\
-	getnetconn.o\
-	getns.o\
-	getuser.o\
-	getwd.o\
-	jmp.o\
-	lrand.o\
-	lnrand.o\
-	main.o\
-	malloc.o\
-	malloctag.o\
-	mallocz.o\
-	nan.o\
-	needsrcquote.o\
-	needstack.o\
-	netmkaddr.o\
-	notify.o\
-	nrand.o\
-	nulldir.o\
-	open.o\
-	opentemp.o\
-	pin.o\
-	pipe.o\
-	post9p.o\
-	postnote.o\
-	qlock.o\
-	quote.o\
-	rand.o\
-	read9pmsg.o\
-	readcons.o\
-	readn.o\
-	rfork.o\
-	searchpath.o\
-	seek.o\
-	sendfd.o\
-	sleep.o\
-	strdup.o\
-	strecpy.o\
-	sysfatal.o\
-	syslog.o\
-	sysname.o\
-	time.o\
-	tm2sec.o\
-	tokenize.o\
-	truerand.o\
-	u16.o\
-	u32.o\
-	u64.o\
-	unsharp.o\
-	wait.o\
-	waitpid.o\
-	write.o\
-	zoneinfo.o\
+GENCFILES=${shell ls gen/*.c}
+GENOFILES=${GENCFILES:.c=.o}
 
 OFILES=\
 	$(SECFILES)\
@@ -227,7 +140,7 @@ OFILES=\
 	$(UTFOFILES)\
 	$(BIOFILES)\
 	$(REGEXFILES)\
-	$(LIB9OFILES)
+	$(GENOFILES)
 	
 HFILES =  auth.h bio/lib9.std.h fmt/fmtdef.h fmt/strtod.h nan.h \
 	regex/regcomp.h sec/libsec.h utf.h \

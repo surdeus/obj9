@@ -15,7 +15,7 @@
 #include <stdarg.h>
 #include <string.h>
 #include "plan9.h"
-#include "utf.h"
+#include <9/utf.h>
 
 char*
 utfecpy(char *to, char *e, char *from)

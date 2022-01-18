@@ -1,5 +1,5 @@
-#include	"lib9.h"
-#include	<bio.h>
+#include	<9/9.h>
+#include	<9/bio.h>
 
 vlong
 Boffset(Biobuf *bp)

@@ -1,4 +1,4 @@
-#include <lib9.h>
+#include <9/9.h>
 
 Rune *
 utftorunes(Rune *r, char *s)

@@ -1,4 +1,4 @@
-#include <lib9.h>
+#include <9/9.h>
 
 char *
 runestoutf(char *s, Rune *r)

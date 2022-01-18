@@ -6,7 +6,7 @@
 #include <string.h>
 #include <errno.h>
 #include "plan9.h"
-#include "fmt.h"
+#include <9/fmt.h>
 #include "fmtdef.h"
 
 static ulong
