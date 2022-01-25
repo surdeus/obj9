@@ -1,6 +1,6 @@
 #include <9/u.h>
 #include <9/c.h>
-#include "fmt/nan.h"
+#include <9/nan.h>
 
 double
 NaN(void)

@@ -11,6 +11,7 @@ p9strlen(char *s)
 int
 p9strnlen(char *s, int n)
 {
+	char *ps = s ;
 	int i;
 	i = 0 ;
 	while(*ps && i < n){

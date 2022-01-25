@@ -2,8 +2,8 @@
 #include <stdarg.h>
 #include <errno.h>
 #include <string.h>
-#include "plan9.h"
-#include "fmt.h"
+#include "9/9.h"
+#include "9/fmt.h"
 #include "fmtdef.h"
 
 int

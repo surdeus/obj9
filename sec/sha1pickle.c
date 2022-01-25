@@ -1,5 +1,5 @@
 #include "os.h"
-#include <libsec.h>
+#include <9/sec.h>
 
 char*
 sha1pickle(SHA1state *s)

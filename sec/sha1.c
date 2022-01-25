@@ -1,5 +1,5 @@
 #include "os.h"
-#include <libsec.h>
+#include <9/sec.h>
 
 static void encode(uchar*, u32int*, ulong);
 

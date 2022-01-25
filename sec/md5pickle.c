@@ -1,5 +1,5 @@
 #include "os.h"
-#include <libsec.h>
+#include <9/sec.h>
 
 char*
 md5pickle(MD5state *s)

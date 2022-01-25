@@ -4,18 +4,11 @@
  * get Plan 9 debugging malloc, which sometimes returns
  * different pointers than the standard malloc. 
  */
-#ifdef PLAN9PORT
 #include <9/u.h>
 #include <9/c.h>
 #include <9/fmt.h>
+#include "fmtdef.h"
 
-#include "fmtdef.h"
-#else
-#include <stdlib.h>
-#include <string.h>
-#include "plan9.h"
-#include "fmtdef.h"
-#endif
 
 static int
 fmtStrFlush(Fmt *f)

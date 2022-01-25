@@ -10,7 +10,7 @@
 #include <9/u.h>
 #include <9/c.h>
 #include <9/auth.h>
-#include <libsec.h>
+#include <9/sec.h>
 
 /*
  * destructively encrypt the buffer, which

@@ -1,8 +1,8 @@
 /* Copyright (c) 2002-2006 Lucent Technologies; see LICENSE */
 #include <stdarg.h>
 #include <string.h>
-#include "plan9.h"
-#include "fmt.h"
+#include "9/9.h"
+#include "9/fmt.h"
 #include "fmtdef.h"
 
 /* format the output into f->to and return the number of characters fmted  */

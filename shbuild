@@ -1,0 +1,20 @@
+#!/bin/sh
+
+. ./shconfig
+
+mkecho(){
+	echo $@
+	if ! $@ ; then
+		exit
+	fi
+}
+
+for i in $CFILES ; do
+	OFILE=`echo $i | sed 's/.c$/.o/'`
+	if test $i -nt $OFILE -o ! -r $OFILE ; then
+		mkecho $CC -c -o $OFILE $DEFS $INCS $CFLAGS $i
+	fi
+done
+
+mkecho $AR $ARFLAGS $OBJNAME.a $OFILES
+
