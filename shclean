@@ -2,4 +2,4 @@
 
 . ./shconfig
 
-rm $OBJNAME.a $OFILES
+rm -f $OBJNAME.a $OFILES

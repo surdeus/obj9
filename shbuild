@@ -16,5 +16,6 @@ for i in $CFILES ; do
 	fi
 done
 
-mkecho $AR $ARFLAGS $OBJNAME.a $OFILES
+mkdir -p shr/obj
+mkecho $AR $ARFLAGS shr/obj/$OBJNAME.a $OFILES
 
