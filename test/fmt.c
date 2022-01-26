@@ -1,5 +1,5 @@
-#include <u.h>
-#include <libc.h>
+#include <9/u.h>
+#include <9/c.h>
 #include <stdio.h>
 
 int failed;

@@ -5,7 +5,7 @@ ARFLAGS="rc"
 OBJNAME=9
 INCS="-Ishr/inc"
 DEFS="-D_DEFAULT_SOURCE"
-CFILES=`ls gen/*.c fmt/*.c bio/*.c \
+CFILES=`ls gen/*.c utf/*.c fmt/*.c bio/*.c \
 	str/*.c chr/*.c regex/*.c sec/*.c \
 	mem/*.c`
 OFILES=`goblin echo -d "

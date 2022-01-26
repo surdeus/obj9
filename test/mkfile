@@ -1,0 +1,14 @@
+CFILES = `{ls *.c}
+AFILES = ../shr/obj/9.a
+INCS = -I../shr/inc
+PROGNAMES = ${CFILES:%.c=%.test}
+CC = tcc
+LD = $CC
+
+all:N:$PROGNAMES
+
+%.test : %.c
+	$LD -o $target $INCS $prereq $AFILES
+
+clean:V:
+	rm -f $PROGNAMES
