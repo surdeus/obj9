@@ -10,7 +10,10 @@ main(int argc, char *argv[])
 	p9memcpy(buf, str, 7);
 	buf[7] = 0 ;
 
-	print("'%s' '%s'\n", str, buf);
+	print("Values after memcpy: '%s' '%s'\n", str, buf);
+
+	p9memset(buf, 'c', 5);
+	print("Values after memset: '%s'\n", buf);
 
 	return 0 ;
 }
