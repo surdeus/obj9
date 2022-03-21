@@ -1,5 +1,5 @@
 #ifndef _9STRING_H
-#define_9STRING_H
+#define _9STRING_H
 
 #include <9/str.h>
 
