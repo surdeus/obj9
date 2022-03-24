@@ -4,7 +4,7 @@ char *
 strcpy(char *dst, char *src)
 {
 	int len = strlen(src) ;
-	memcpy(dst, src, len+1);
+	p9memcpy(dst, src, len+1);
 	return dst ;
 }
 
