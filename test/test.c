@@ -5,4 +5,5 @@ main(int argc, char **argv)
 {
 	werrstr("hello world");
 	print("%r\n");
+	return 0 ;
 }
